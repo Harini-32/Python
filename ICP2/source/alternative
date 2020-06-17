@@ -1,0 +1,11 @@
+def string_alternative(ip):
+    return ip[::2]
+
+def main():
+    word = input("Enter the word:")
+    result = string_alternative(word)
+    print("Result:", result)
+
+
+if __name__ == "__main__":
+    main()

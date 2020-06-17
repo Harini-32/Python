@@ -1,0 +1,11 @@
+range_ = int(input('enter the range of weights : '))
+l = []
+for i in range(range_):
+    l.append(input())
+l2 = []
+for x in l:
+    l2.append(float(x)*0.45)
+print('weights in lbs', l)
+print('weights in kgs',l2)
+
+

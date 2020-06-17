@@ -1,0 +1,12 @@
+from collections import Counter
+def main():
+
+    file = open("python.txt", "r")
+    wordcount = Counter(file.read().split())
+    f = open("ouput", "w")
+    for item in wordcount.items():
+        f.write("{}\t{}\n".format(*item))
+        print("{}\t{}".format(*item))
+
+if __name__ == "__main__":
+    main()
